@@ -2,8 +2,8 @@
 const btn = document.getElementById('btn');
 btn.addEventListener('click', function() {
 const city = document.getElementById('city').value;
-const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=171e009cae7e126fcbcec49c3a5cee6a`;
-fetch(url)
+const url =  `https://api.openweathermap.org/data/2.5/weather?q={city}&appid={b380bc7b27bc25a2f0be366f6abda007}`;
+fetch(url)  
     .then(response => response.json())
     .then(data => {
         displayWeather(data);
